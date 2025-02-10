@@ -32,14 +32,14 @@ For noninferiority testing, the null and alternative hypotheses have been descri
   $$H_1: \theta_e - \theta_c > -\delta \text{ or } H_1: \theta_e - \theta_c + \delta > 0$$
   
   
-  where $\theta_e$ is the diagnostic accuracy of experimental modality, or the AUC of AI in the current example. Similarly, $\theta_c$, or the diagnostic accuracy of the conventional modality, represents the AUC of SFM in the current example. @chen2012 describe this set of hypotheses as testing that "the performance of the new modality is no worse than $\delta$ below that of the conventional modality". 
+  where $\theta_e$ is the diagnostic accuracy of experimental modality, or the AUC of AI in the current example. Similarly, $\theta_c$, or the diagnostic accuracy of the conventional modality, represents the AUC of SFM in the current example. @chen2012 describe this set of hypotheses as testing that "the performance of the new modality is no worse than $\delta$ below that of the conventional modality." 
 
 Therefore, if we can reject $H_0$, then we have shown that that the experimental modality (ie. AI) is not inferior to the conventional modality (ie. SFM).  If we fail to reject $H_0$, then the experimental modality may be inferior to the conventional modality. 
 
 
 # Viper Example - Load Data 
 
-To use the viperData package, we can download the package in its entirety here: https://didsr.github.io/viperData/, as a tar.gz or zip file and install the package from the computer's local library.  This is possible using the Tools dropdown, selecting "Install packages...", and changing the "Install From:" option to "Package Archive File". From here we can browse and select the downloaded viperData package to install and load into our Environment. 
+To use the viperData package, we can download the package in its entirety here: https://didsr.github.io/viperData/, as a tar.gz or zip file and install the package from the computer's local library.  This is possible using the Tools dropdown, selecting "Install packages... ," and changing the "Install From:" option to "Package Archive File." From here we can browse and select the downloaded viperData package to install and load into our Environment. 
 
 ```{r, warning = FALSE}
 #Load iMRMC package

@@ -196,7 +196,7 @@ doAUCmrmc = function(data, flagROC = FALSE){
   nC.neg = nlevels(cases.neg)
   
   cases.pos = factor(truthDF[truthDF$score == 1, "caseID"])
-  nC.pos = length(cases.neg)
+  nC.pos = length(cases.pos)
   
   
   
@@ -1117,7 +1117,7 @@ doDFdifference <- function(studySize, Ustat.pair, Ustat.full) {
     sb.D <- (Ustat.1$BCK.D.b + Ustat.2$BCK.D.b - 2 * Ustat.pair$BCK.D.b)^2/(dfD)^3
   } else {
     sb.D <- sum(c(
-      (Ustat.1$BCK.D.b / Ustat.1$dfD)^2 / Ustat.1$dfD
+      (Ustat.1$BCK.D.b / Ustat.1$dfD)^2 / Ustat.1$dfD,
       (Ustat.2$BCK.D.b / Ustat.2$dfD)^2 / Ustat.2$dfD
     ))
   }
